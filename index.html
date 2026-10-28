@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bovaba – A Reader's Guide to Tea, Brewing and Everyday Drinks</title>
+<meta name="description" content="An educational guide to tea and everyday drinks: where they come from, how they are made, how to brew them well and how to enjoy them mindfully.">
+
+<!-- ===== GOOGLE AD CODE (AdSense) : apna script yahan head mein paste karein ===== -->
+<!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script> -->
+
+<style>
+:root{--berry:#4f2346;--plum:#733363;--peach:#ffe6d6;--cream:#fff8f1;--amber:#f0a03c;--leaf:#3f7d5a;--ink:#2a1d28;--muted:#6b5a68;--line:#ecd9d0}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Segoe UI",system-ui,-apple-system,Roboto,Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.75;font-size:17px}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;color:var(--berry);line-height:1.2;font-weight:700}
+a{color:var(--plum)}
+:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
+.wrap{width:100%;max-width:1180px;margin:0 auto;padding:0 24px}
+.narrow{max-width:780px}
+p+p{margin-top:16px}
+
+/* header */
+header{background:var(--cream);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 24px;max-width:1180px;margin:0 auto}
+.logo{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--berry);font-family:Georgia,serif;font-size:26px;font-weight:700}
+.logo svg{width:40px;height:40px}
+nav ul{list-style:none;display:flex;gap:22px;flex-wrap:wrap}
+nav a{text-decoration:none;color:var(--ink);font-size:15px;font-weight:600}
+nav a:hover{color:var(--plum)}
+
+/* hero */
+.hero{background:var(--peach);padding:80px 0 90px;position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center}
+.hero h1{font-size:clamp(34px,5vw,56px);margin-bottom:20px}
+.hero p{font-size:19px;color:var(--muted);max-width:560px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.chips span{background:#fff;border:1px solid var(--line);color:var(--berry);padding:7px 16px;border-radius:30px;font-size:14px;font-weight:600}
+.hero svg.cup{width:100%;max-width:340px;margin:0 auto;display:block}
+
+/* sections */
+section{padding:72px 0}
+section.alt{background:var(--cream)}
+section.berry{background:var(--berry);color:#f3e4ee}
+section.berry h2,section.berry h3{color:#fff}
+.sec-head{max-width:760px;margin-bottom:34px}
+.sec-head h2{font-size:clamp(28px,3.6vw,40px);margin-bottom:12px}
+.sec-head p{color:var(--muted)}
+section.berry .sec-head p{color:#e0c9d8}
+.two{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.panel{background:var(--berry);color:#f3e4ee;border-radius:18px;padding:30px}
+.panel h3{color:var(--amber);font-size:22px;margin-bottom:10px}
+.panel ul{padding-left:20px}
+.panel li{margin:7px 0}
+
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:28px;border-top:5px solid var(--amber)}
+.card:nth-child(2n){border-top-color:var(--leaf)}
+.card:nth-child(3n){border-top-color:var(--plum)}
+.card h3{font-size:21px;margin-bottom:10px}
+.card p{color:var(--muted);font-size:16px}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;counter-reset:s}
+.step{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);border-radius:14px;padding:26px;counter-increment:s}
+.step::before{content:counter(s);display:block;font-family:Georgia,serif;font-size:34px;color:var(--amber);margin-bottom:6px}
+.step h3{font-size:19px;margin-bottom:8px}
+.step p{font-size:15.5px;color:#e0c9d8}
+
+/* table */
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:#fff}
+table{width:100%;border-collapse:collapse;min-width:620px}
+th,td{padding:14px 18px;text-align:left;border-bottom:1px solid var(--line);font-size:16px}
+th{background:var(--berry);color:#fff;font-weight:600}
+tr:last-child td{border-bottom:0}
+
+/* ad slots (no label, no promo) */
+.adslot{display:block;width:100%;min-height:120px;margin:0 auto;text-align:center}
+.adrow{padding:28px 0;background:#fff}
+
+/* faq */
+details{background:#fff;border:1px solid var(--line);border-radius:12px;padding:18px 22px;margin-bottom:14px}
+summary{cursor:pointer;font-weight:700;color:var(--berry);font-size:18px}
+details p{margin-top:12px;color:var(--muted)}
+
+/* disclaimer */
+.disclaimer{background:#fff8e6;border-left:5px solid #d9a526;padding:26px 28px;border-radius:10px;font-size:15.5px;color:#4a4330}
+.disclaimer h3{font-size:20px;margin-bottom:8px;color:#5c4b13}
+
+/* footer */
+footer{background:var(--ink);color:#d9c9d3;padding:54px 0 30px}
+.foot{display:flex;flex-wrap:wrap;gap:40px;justify-content:space-between}
+.foot .logo{color:#fff}
+.foot p{max-width:420px;margin-top:12px;font-size:15px}
+.foot ul{list-style:none}
+.foot li{margin:8px 0}
+.foot a{color:#d9c9d3;text-decoration:none}
+.foot a:hover{color:#fff;text-decoration:underline}
+.copy{border-top:1px solid rgba(255,255,255,.18);margin-top:34px;padding-top:20px;font-size:14px;text-align:center}
+
+@media(max-width:900px){.two,.hero .wrap{grid-template-columns:1fr}.grid{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}.hero svg.cup{max-width:240px}}
+@media(max-width:600px){body{font-size:16px}.grid,.steps{grid-template-columns:1fr}section{padding:52px 0}.hero{padding:56px 0 64px}nav ul{gap:14px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="nav">
+    <a class="logo" href="#top" aria-label="Home">
+      <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="23" fill="#4f2346"/><path d="M12 20h22v6a11 11 0 0 1-11 11h0a11 11 0 0 1-11-11z" fill="#ffe6d6"/><path d="M34 22h3a4 4 0 0 1 0 8h-4" stroke="#ffe6d6" stroke-width="2.4" fill="none" stroke-linecap="round"/><path d="M18 15c0-3 3-3 3-6M25 15c0-3 3-3 3-6" stroke="#f0a03c" stroke-width="2.2" stroke-linecap="round" fill="none"/></svg>
+      Bovaba
+    </a>
+    <nav aria-label="Main">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#origins">Origins</a></li>
+        <li><a href="#types">Types</a></li>
+        <li><a href="#brewing">Brewing</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <h1>A reader's guide to tea, brewing and everyday drinks</h1>
+      <p>Bovaba is an educational reading space about where common drinks come from, how they are made, and how to prepare and enjoy them with a little more care and curiosity.</p>
+      <div class="chips"><span>Tea basics</span><span>Brewing</span><span>Culture and history</span><span>Mindful habits</span></div>
+    </div>
+    <svg class="cup" viewBox="0 0 300 300" aria-hidden="true">
+      <circle cx="150" cy="150" r="140" fill="#fff" opacity=".55"/>
+      <path d="M70 125h140v45a70 70 0 0 1-70 70h0a70 70 0 0 1-70-70z" fill="#4f2346"/>
+      <path d="M210 140h20a28 28 0 0 1 0 56h-26" stroke="#4f2346" stroke-width="14" fill="none" stroke-linecap="round"/>
+      <ellipse cx="140" cy="127" rx="70" ry="10" fill="#f0a03c"/>
+      <path d="M105 95c0-18 18-18 18-38M145 95c0-18 18-18 18-38M180 95c0-14 12-14 12-28" stroke="#733363" stroke-width="8" stroke-linecap="round" fill="none" opacity=".7"/>
+      <path d="M60 255h160" stroke="#4f2346" stroke-width="10" stroke-linecap="round"/>
+    </svg>
+  </div>
+</div>
+
+<section id="about">
+  <div class="wrap two">
+    <div>
+      <div class="sec-head"><h2>What this guide is about</h2></div>
+      <p>Few things are as ordinary and as widely shared as a warm cup of something to drink. Across homes, offices and street corners, people begin their mornings and slow their afternoons with tea and other simple drinks. Behind each cup there is a plant, a place, a method and often a story that stretches back hundreds of years.</p>
+      <p>Bovaba brings those stories together in plain language. This page is written for students, home brewers and curious readers who want to understand what they drink: how tea leaves are grown and processed, why water temperature matters, how different traditions serve their drinks, and how to build gentle, balanced habits around them.</p>
+    </div>
+    <div class="panel">
+      <h3>In this guide</h3>
+      <ul>
+        <li>Where tea comes from and how it spread</li>
+        <li>The main kinds of tea and what sets them apart</li>
+        <li>Brewing steps that work at home</li>
+        <li>An introduction to bubble tea and cold drinks</li>
+        <li>Storage, hydration and mindful habits</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="adrow"><div class="wrap">
+  <!-- ===== AD SLOT 1: Google ad unit code yahan paste karein ===== -->
+  <ins class="adslot"></ins>
+</div></div>
+
+<section id="origins" class="alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Where tea comes from</h2>
+      <p>Every kind of true tea starts from the same evergreen plant, Camellia sinensis.</p>
+    </div>
+    <div class="grid">
+      <div class="card"><h3>An ancient plant</h3><p>Tea was first cultivated in the mountain regions of southwest China, and written records of drinking it go back many centuries. Over time it became a daily drink, a ceremonial one and an important trade good.</p></div>
+      <div class="card"><h3>A journey across regions</h3><p>Traders, monks and travellers carried tea across Asia and later to the Middle East and Europe. Each region adapted it to local taste, adding spices, milk, sweeteners or fresh herbs.</p></div>
+      <div class="card"><h3>Terroir matters</h3><p>Altitude, soil, rainfall and the time of harvest all shape flavour. Leaves grown slowly in cool, misty highlands often taste different from those grown in warm lowlands.</p></div>
+    </div>
+    <div class="narrow" style="margin-top:38px">
+      <p>Tea gardens in India, China, Sri Lanka, Kenya, Japan and many other countries each produce a distinct character. Some are known for bright and brisk cups, others for soft, sweet or smoky ones. Reading the label for origin and harvest season is a simple first step toward understanding what you are tasting.</p>
+    </div>
+  </div>
+</section>
+
+<section id="types">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>The main kinds of tea</h2>
+      <p>The difference between them comes mostly from how much the leaves are allowed to oxidise after picking.</p>
+    </div>
+    <div class="tbl">
+      <table>
+        <thead><tr><th>Type</th><th>Processing</th><th>Typical taste</th><th>Common brewing note</th></tr></thead>
+        <tbody>
+          <tr><td>White</td><td>Lightly withered and dried</td><td>Delicate, soft, slightly sweet</td><td>Cooler water, short steep</td></tr>
+          <tr><td>Green</td><td>Heated early to stop oxidation</td><td>Fresh, grassy, sometimes nutty</td><td>Water below boiling, 2 to 3 minutes</td></tr>
+          <tr><td>Oolong</td><td>Partly oxidised</td><td>Floral to roasted</td><td>Hot water, several short infusions</td></tr>
+          <tr><td>Black</td><td>Fully oxidised</td><td>Rich, malty, brisk</td><td>Freshly boiled water, 3 to 5 minutes</td></tr>
+          <tr><td>Herbal infusion</td><td>Dried flowers, roots or leaves</td><td>Varies by ingredient</td><td>Follow the pack; often longer steep</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="narrow" style="margin-top:30px">
+      <p>Strictly speaking, herbal infusions such as mint or chamomile are not tea, because they do not come from the tea plant. They are still enjoyed in much the same way, and many readers like to keep a few on hand for the evening.</p>
+    </div>
+  </div>
+</section>
+
+<div class="adrow"><div class="wrap">
+  <!-- ===== AD SLOT 2: Google ad unit code yahan paste karein ===== -->
+  <ins class="adslot"></ins>
+</div></div>
+
+<section id="brewing" class="berry">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Brewing a good cup, step by step</h2>
+      <p>Four simple habits improve almost any cup.</p>
+    </div>
+    <div class="steps">
+      <div class="step"><h3>Start with fresh water</h3><p>Use cold, fresh water rather than water that has been boiled several times. It tastes cleaner and brighter.</p></div>
+      <div class="step"><h3>Match the temperature</h3><p>Delicate leaves prefer cooler water, while strong black teas can take it fully hot. Too hot can taste bitter.</p></div>
+      <div class="step"><h3>Watch the time</h3><p>Set a timer. A minute too long can turn a pleasant cup harsh, and too short can leave it thin.</p></div>
+      <div class="step"><h3>Remove the leaves</h3><p>Lift the leaves or strainer once the time is up so the flavour stays balanced as the cup cools.</p></div>
+    </div>
+    <div class="narrow" style="margin-top:38px">
+      <p>Measure leaves rather than guessing. A common starting point is about one teaspoon of loose leaves for each cup of water, then adjust to taste. Warming the cup or pot first also helps hold the temperature steady during steeping.</p>
+    </div>
+  </div>
+</section>
+
+<div class="adrow"><div class="wrap">
+  <!-- ===== AD SLOT 3: Google ad unit code yahan paste karein ===== -->
+  <ins class="adslot"></ins>
+</div></div>
+
+<section class="alt">
+  <div class="wrap two">
+    <div>
+      <div class="sec-head"><h2>A simple look at bubble tea and cold drinks</h2></div>
+      <p>Bubble tea began in Taiwan in the 1980s and is now enjoyed around the world. It usually combines brewed tea, milk or fruit flavours and chewy tapioca pearls made from cassava starch. The pearls are boiled until soft and often steeped in a light syrup before serving.</p>
+      <p>Cold drinks follow the same logic as hot ones. Cold brewing, where leaves rest in cool water for several hours, gives a smooth and gentle cup with less bitterness. It is a good method for hot days and an easy experiment for beginners, because it needs patience rather than skill.</p>
+    </div>
+    <div class="panel">
+      <h3>Good to know</h3>
+      <ul>
+        <li>Cold brew takes about 6 to 10 hours in a fridge</li>
+        <li>Sweeteners change both taste and total sugar</li>
+        <li>Fresh fruit and mint add flavour without extras</li>
+        <li>Clean bottles and jugs prevent stale tastes</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Drinking traditions around the world</h2>
+      <p>The same leaf, served in many different ways.</p>
+    </div>
+    <div class="grid">
+      <div class="card"><h3>Gongfu and Japanese styles</h3><p>Small pots, short infusions and careful attention to leaf, water and timing. Matcha, a powdered green tea, is whisked and drunk whole in a quiet ritual setting.</p></div>
+      <div class="card"><h3>Masala chai</h3><p>Common in South Asia, chai simmers black tea with milk, sugar and spices such as ginger, cardamom and cloves. Each household has its own recipe.</p></div>
+      <div class="card"><h3>Afternoon tea</h3><p>A British custom of tea served with sandwiches and small cakes in the late afternoon, popularised in the nineteenth century.</p></div>
+      <div class="card"><h3>Mint and glass tea</h3><p>In North Africa and the Middle East, tea is often poured from height into small glasses with fresh mint and shared as a sign of welcome.</p></div>
+      <div class="card"><h3>Butter and salt teas</h3><p>In some Himalayan regions, tea is churned with butter and salt to make a warming drink suited to cold, high altitudes.</p></div>
+      <div class="card"><h3>Iced and sparkling styles</h3><p>Iced tea is a summer staple in many countries, and newer sparkling tea blends offer a lighter alternative to sweet fizzy drinks.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="adrow"><div class="wrap">
+  <!-- ===== AD SLOT 4: Google ad unit code yahan paste karein ===== -->
+  <ins class="adslot"></ins>
+</div></div>
+
+<section class="alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <h2>Storage, water and mindful habits</h2>
+      <p>Small routines that keep drinks tasting good and fit comfortably into the day.</p>
+    </div>
+    <div class="grid">
+      <div class="card"><h3>Store it well</h3><p>Keep tea in an airtight, opaque container away from light, heat, moisture and strong smells. Dry leaves can pick up odours quickly.</p></div>
+      <div class="card"><h3>Mind the water</h3><p>Very hard or heavily chlorinated water can dull flavour. Filtered or settled water often gives a cleaner cup.</p></div>
+      <div class="card"><h3>Balance your day</h3><p>Plain water, tea and other drinks can all be part of a varied routine. Notice how you feel and enjoy caffeine in amounts that suit you.</p></div>
+      <div class="card"><h3>Slow down</h3><p>Taking a few minutes to prepare and sip a drink without screens is a simple way to pause, whatever the drink is.</p></div>
+      <div class="card"><h3>Try something new</h3><p>Sample one new kind each month. Keeping a short tasting note helps you remember what you liked and why.</p></div>
+      <div class="card"><h3>Reduce waste</h3><p>Reusable cups, loose-leaf tea and compostable leaves cut down on packaging and often taste better too.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap narrow">
+    <div class="sec-head"><h2>Frequently asked questions</h2></div>
+    <details><summary>Is all tea made from the same plant?</summary><p>True teas such as white, green, oolong and black all come from Camellia sinensis. The differences come from processing. Herbal infusions are made from other plants.</p></details>
+    <details><summary>Why does my tea taste bitter?</summary><p>Water that is too hot or a steep that is too long are the usual causes. Try cooler water, a shorter time or slightly fewer leaves.</p></details>
+    <details><summary>Can I reuse tea leaves?</summary><p>Many whole-leaf teas, especially oolongs and greens, can be steeped several times. Each infusion tastes a little different.</p></details>
+    <details><summary>How should I store loose-leaf tea?</summary><p>Use a clean, airtight, opaque container in a cool, dry cupboard. Avoid keeping it next to spices or other strong-smelling foods.</p></details>
+    <details><summary>What are tapioca pearls?</summary><p>They are small chewy balls made from cassava starch. They are cooked in boiling water until soft and are commonly added to bubble tea.</p></details>
+  </div>
+</section>
+
+<div class="adrow"><div class="wrap">
+  <!-- ===== AD SLOT 5: Google ad unit code yahan paste karein ===== -->
+  <ins class="adslot"></ins>
+</div></div>
+
+<section style="padding-top:20px">
+  <div class="wrap narrow">
+    <div class="disclaimer">
+      <h3>Disclaimer</h3>
+      <p>The content on Bovaba is provided for general educational and informational purposes only. It is not professional medical, nutritional or dietary advice. Individual needs differ, including sensitivity to caffeine, sugar and other ingredients, so readers should use their own judgement and consult a qualified professional before making changes to their diet or health routine. Brewing times, temperatures and traditions described here are general guidelines and may vary by product and region. This site makes no guarantees about the accuracy or completeness of the information and is not responsible for any outcome arising from its use. Third-party advertisements may appear on this page and are provided by independent advertising partners.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a class="logo" href="#top">
+          <svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="23" fill="#733363"/><path d="M12 20h22v6a11 11 0 0 1-11 11h0a11 11 0 0 1-11-11z" fill="#ffe6d6"/><path d="M34 22h3a4 4 0 0 1 0 8h-4" stroke="#ffe6d6" stroke-width="2.4" fill="none" stroke-linecap="round"/><path d="M18 15c0-3 3-3 3-6M25 15c0-3 3-3 3-6" stroke="#f0a03c" stroke-width="2.2" stroke-linecap="round" fill="none"/></svg>
+          Bovaba
+        </a>
+        <p>An educational resource about tea, brewing and everyday drinks.</p>
+      </div>
+      <div>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms &amp; Conditions</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">&copy; 2026 Bovaba. All rights reserved.</div>
+  </div>
+</footer>
+
+</body>
+</html>
